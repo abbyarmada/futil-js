@@ -4,13 +4,13 @@ import * as f from '../lib/futil-js'
 chai.expect()
 const expect = chai.expect
 
-describe('Object Functions', function() {
-    it('singleObject', function() {
+describe('Object Functions', function () {
+    it('singleObject', function () {
         expect(f.singleObject('a', 'b')).to.deep.equal({
             a: 'b'
         })
     })
-    it('chunkObject', function() {
+    it('chunkObject', function () {
         expect(f.chunkObject({
             a: 1,
             b: 2
@@ -20,7 +20,7 @@ describe('Object Functions', function() {
             b: 2
         }])
     })
-    it('compactObject', function() {
+    it('compactObject', function () {
         expect(f.compactObject({
             a: 1,
             b: null,
@@ -29,7 +29,7 @@ describe('Object Functions', function() {
             a: 1
         })
     })
-    it('stripEmptyObjects', function() {
+    it('stripEmptyObjects', function () {
         expect(f.stripEmptyObjects({
             a: 1,
             b: {},
@@ -39,7 +39,7 @@ describe('Object Functions', function() {
             c: 2
         })
     })
-    it('unwind', function() {
+    it('unwind', function () {
         expect(f.unwind('x', {
             x: ['a', 'b'],
             y: 1
@@ -51,7 +51,7 @@ describe('Object Functions', function() {
             y: 1
         }])
     })
-    it('flattenObject', function() {
+    it('flattenObject', function () {
         expect(f.flattenObject({
             a: {
                 b: {
